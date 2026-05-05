@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.15.1] - 2026-05-05
+
+Documentation-only patch covering the Claude Code Remote Control + push notifications pattern across the research-heavy guides.
+
+### Documentation
+
+- **Remote Control + push notifications (#426, closes #369).** Six research command guides (`research`, `datascout`, `aws-research`, `azure-research`, `gcp-research`, `grants`) gain a "Long runs: Remote Control + push notifications" section with a command-specific decision-point example (vendor shortlist, region selection, data source pick, programme shortlist, etc.). `autoresearch.md` gets a "Phone pings via Remote Control" subsection alongside the existing Monitor tool guidance, oriented at overnight runs paired with `ENABLE_PROMPT_CACHING_1H=1`. `CLAUDE.md` adds a "Remote Control + push notifications (user-facing)" section under the Monitor Tool docs, including pairing with the `stale-artifact-scan` background monitor. Floor reference is current (v2.1.121 covers the v2.1.110 RC requirement). Constraints listed in every section: Pro/Max plans only, push is a single on/off toggle, the local `claude` process must keep running, and `/ultrareview` flows do not compose with RC.
+
 ## [4.15.0] - 2026-05-05
 
 Ships the Canada Federal Overlay alongside the v4.14.0 platform-capability adoption from earlier the same day.

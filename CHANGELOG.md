@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.15.1] - 2026-05-05
+
+Documentation-only patch.
+
+### Documentation
+
+- **Remote Control + push notifications adoption (#426, closes #369).** Adds a "Long runs: Remote Control + push notifications" section to the six research-heavy command guides (`research`, `datascout`, `aws-research`, `azure-research`, `gcp-research`, `grants`) — each tailored to that command's typical decision points. Adds a "Phone pings via Remote Control" subsection to `autoresearch.md`, sibling to the existing Monitor guidance, oriented at overnight runs paired with `ENABLE_PROMPT_CACHING_1H=1`. Adds a "Remote Control + push notifications (user-facing)" section to `CLAUDE.md` under the Monitor Tool docs, including pairing with the `stale-artifact-scan` monitor. Floor reference correctly states v2.1.121 (current minimum) covers the v2.1.110 RC requirement.
+
 ## [4.15.0] - 2026-05-05
 
 Ships the Canada Federal Overlay alongside the v4.14.0 platform-capability adoption from earlier the same day.
