@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.2] - 2026-05-19
+
+### Added
+
+- New `hooks/notify-stale-artifacts.mjs` SessionStart hook. Opt-in `terminalSequence` (Claude Code v2.1.141+) desktop notifications when `detect-stale-artifacts.sh` reports overdue artefacts at session start. Stacks OSC 9 (iTerm2 / Windows Terminal / WezTerm / ConEmu) and OSC 777 (urxvt / Ghostty / Warp) escapes; terminals silently drop unsupported codes per the documented allowlist. Gated on `${user_config.desktop_notifications} == "true"` via the `--enabled=` arg so the disabled path is a fast no-op (#497).
+- New `desktop_notifications` userConfig string field. Set to `"true"` to enable the SessionStart desktop notification hook above (#497).
+
+### Documentation
+
+- `hooks/README.md` documents the new `notify-stale-artifacts.mjs` hook and its OSC stacking strategy (#497).
+- All 6 community-overlay READMEs (`arckit-uae`, `arckit-fr`, `arckit-ca`, `arckit-eu`, `arckit-at`, `arckit-au`) call out the v2.1.143 plugin dependency enforcement so users know `claude plugin disable arckit` will warn while an overlay is enabled (#497).
+
 ## [5.0.1] - 2026-05-19
 
 ### Changed
