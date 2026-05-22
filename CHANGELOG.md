@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.3] - 2026-05-22
+
+### Added
+
+- **Auto-tidy Wardley Map labels** (#506). New `tidy-wardley-labels` PostToolUse hook rewrites Mermaid `wardley-beta` component-label offsets after every Write/Edit, so clustered components no longer collide into an unreadable pile. Backed by a pure, deterministic placement engine that projects the map to pixels, generates 32 candidate slots per label, scores each against a weighted collision penalty, places the most-constrained labels first, and converges to an idempotent result.
+
+### Documentation
+
+- New articles: the v5 plugin-split token budget (#502) and the Wardley label-tidy placement algorithm (#500, #506). Per-article `sitemap.xml` and `llms.txt` entries backfilled (#503, #504, #505).
+
 ## [5.0.2] - 2026-05-19
 
 ### Added

@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.3] - 2026-05-22
+
+### Added
+
+- New `hooks/tidy-wardley-labels.mjs` PostToolUse hook, plus the `hooks/wardley-label-placement.mjs` placement engine and `hooks/wardley-tidy.mjs` driver. After a Write/Edit touches a file containing a Mermaid `wardley-beta` block, the hook rewrites each component label's offset into a scored, non-overlapping slot. The placement engine is pure and deterministic — 32 candidate slots per label, weighted collision scoring, most-constrained-first ordering, idempotent output (#506).
+
+### Documentation
+
+- `hooks/README.md` documents the new `tidy-wardley-labels` hook; `docs/guides/wardley.md` notes the auto-tidy behaviour (#506).
+
 ## [5.0.2] - 2026-05-19
 
 ### Added
