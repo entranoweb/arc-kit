@@ -5,6 +5,12 @@ All notable changes to the ArcKit Claude Code plugin will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.11.2] — 2026-06-08
+
+### Changed
+
+- **Generated non-Claude extension dirs moved to `extensions/`** (#588). Repository restructure only — the `arckit-claude` plugin's commands, agents, skills, hooks, templates and config are unchanged, and installation and usage are identical. The Codex/OpenCode/Copilot/Gemini/Paperclip converter outputs now live under `extensions/` instead of the repo root.
+
 ## [5.11.1] — 2026-06-07
 
 ### Changed
