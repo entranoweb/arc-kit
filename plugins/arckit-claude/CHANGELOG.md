@@ -7,8 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.15.0] — 2026-06-19
+
 ### Added
 
+- **Self-Harness autoresearch implementation.** Added the enhanced
+  `program-selfharness.md` autoresearch workflow and supporting tracer,
+  weakness-miner, harness-proposer, and harness-validator utilities.
 - **Open Knowledge Format interoperability.** Added `/arckit:export-okf` and
   `/arckit:import-okf` commands, Node import/export scripts, shared OKF
   frontmatter helpers, and guide docs. Export creates OKF-compatible copies of
