@@ -52,6 +52,8 @@ CLAUDE_PLUGIN_LAYOUT=(
   "plugins/arckit-uk-nhs:plugin/uk/nhs"
   "plugins/arckit-fde:plugin/fde"
   "plugins/arckit-uk-gcloud:plugin/uk/gcloud"
+  "plugins/arckit-togaf-adm:plugin/togaf/adm"
+  "plugins/arckit-agent-architecture:plugin/agent/architecture"
 )
 
 # ── Determine which distributions to push ─────────────────────────────────────

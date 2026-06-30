@@ -121,7 +121,7 @@ This command creates `{plugin-name}--vX.Y.Z` style tags (e.g. `arckit--v4.14.0`)
 
 ## v6.0.0+ — single Claude marketplace repo
 
-From v6.0.0 the standalone `tractorjuice/arckit-claude` repo is the preferred Claude Code marketplace. It ships 13 plugins in one repo: the `arckit` core plugin at the root plus regional, sector, tooling, and supplier overlays under structured `plugin/...` paths. All Claude plugins share one version, bumped together. The `arckit-uk-gcloud` overlay is public for installation and inspection but remains proprietary, so the standalone repo license carries an explicit exception for `plugin/uk/gcloud/`.
+From v6.0.0 the standalone `tractorjuice/arckit-claude` repo is the preferred Claude Code marketplace. It ships 15 plugins in one repo: the `arckit` core plugin at the root plus regional, sector, method, agent-architecture, tooling, and supplier overlays under structured `plugin/...` paths. All Claude plugins share one version, bumped together. The `arckit-uk-gcloud` overlay is public for installation and inspection but remains proprietary, so the standalone repo license carries an explicit exception for `plugin/uk/gcloud/`.
 
 Step 8 changes — validate every plugin manifest:
 

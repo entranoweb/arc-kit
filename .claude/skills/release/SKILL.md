@@ -109,8 +109,8 @@ The highest-signal failures — collected from real releases. Read these before 
 - **Skipping extension tests.** Run the step 4 extension suite after `converter.py`. It validates
   Codex, Gemini, OpenCode, Copilot, Vibe, Paperclip, release inventory, version alignment, and
   platform-specific command rewrites before anything is tagged.
-- **Hardcoding the plugin list.** The Claude marketplace now ships 13 plugins (core plus
-  regional, sector, tooling, and supplier overlays) and keeps growing. Older examples listed
+- **Hardcoding the plugin list.** The Claude marketplace now ships 15 plugins (core plus
+  regional, sector, method, agent-architecture, tooling, and supplier overlays) and keeps growing. Older examples listed
   only 7, silently skipping newer plugins. Discover plugins dynamically (step 7) -- this is the
   exact bug that shipped `arckit-uk-nhs` untagged mid-v5.4.0, which is why `tag-plugins.sh`
   now auto-discovers. Never copy a static plugin array.

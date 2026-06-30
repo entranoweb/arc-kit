@@ -295,6 +295,46 @@
         "bid"
       ],
       "category": "productivity"
+    },
+    {
+      "name": "arckit-togaf-adm",
+      "source": "./plugin/togaf/adm",
+      "description": "TOGAF ADM — Enterprise Architecture Development Method. 9 commands covering all ADM phases (Preliminary through H) plus Architecture Repository. [COMMUNITY]",
+      "version": "6.0.0",
+      "author": {
+        "name": "ArcKit Contributors"
+      },
+      "homepage": "https://github.com/tractorjuice/arckit-claude",
+      "repository": "https://github.com/tractorjuice/arckit-claude",
+      "license": "MIT",
+      "keywords": [
+        "architecture",
+        "governance",
+        "togaf",
+        "adm",
+        "enterprise-architecture"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "arckit-agent-architecture",
+      "source": "./plugin/agent/architecture",
+      "description": "AI Agent Architecture — Governance, design, and security for autonomous AI agent programs. 6 commands. [COMMUNITY]",
+      "version": "6.0.0",
+      "author": {
+        "name": "ArcKit Contributors"
+      },
+      "homepage": "https://github.com/tractorjuice/arckit-claude",
+      "repository": "https://github.com/tractorjuice/arckit-claude",
+      "license": "MIT",
+      "keywords": [
+        "architecture",
+        "governance",
+        "ai",
+        "agents",
+        "agent-architecture"
+      ],
+      "category": "productivity"
     }
   ]
 }

@@ -33,6 +33,12 @@ EXPECTED_CLAUDE_MARKETPLACE_SOURCES = {
     "arckit-uk-nhs": ("./plugin/uk/nhs", "plugins/arckit-uk-nhs", "MIT"),
     "arckit-fde": ("./plugin/fde", "plugins/arckit-fde", "MIT"),
     "arckit-uk-gcloud": ("./plugin/uk/gcloud", "plugins/arckit-uk-gcloud", "Proprietary"),
+    "arckit-togaf-adm": ("./plugin/togaf/adm", "plugins/arckit-togaf-adm", "MIT"),
+    "arckit-agent-architecture": (
+        "./plugin/agent/architecture",
+        "plugins/arckit-agent-architecture",
+        "MIT",
+    ),
 }
 
 PINNED_README_VERSION_PATTERNS = [
